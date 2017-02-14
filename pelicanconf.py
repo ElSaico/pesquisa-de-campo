@@ -20,16 +20,29 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+    ('StatsBomb', 'http://statsbomb.com/'),
+    ('Deep xG', 'http://deepxg.com/'),
+    ('Paste Soccer', 'https://www.pastemagazine.com/soccer'),
+    ('American Soccer Analysis', 'http://www.americansocceranalysis.com/'),
+    ('Front Office Report', 'http://frontoffice.report/'),
+    ('Analytics FC', 'https://analyticsfc.co.uk/'),
+    ('11tegen11', 'http://11tegen11.net/'),
+)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('Twitter', 'http://twitter.com/DataMarques'),
+    ('Facebook', 'http://facebook.com/bm2290'),
+)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+MARKUP = ('md', 'ipynb')
+
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup']
+
