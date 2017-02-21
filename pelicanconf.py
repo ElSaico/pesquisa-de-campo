@@ -44,5 +44,9 @@ DEFAULT_PAGINATION = 10
 MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['ipynb.markup']
+PLUGINS = ['ipynb.markup', 'rmd_reader']
+
+STATIC_PATHS = ['figure']
+RMD_READER_RENAME_PLOT = 'directory'
+RMD_READER_KNITR_OPTS_CHUNK = {'fig.path': 'figure/'}
 
