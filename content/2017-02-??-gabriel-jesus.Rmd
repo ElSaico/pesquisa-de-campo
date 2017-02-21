@@ -14,14 +14,13 @@ chances_files <- file.path('data', list.files('data', pattern='StrataData_Chance
 chances <- rbindlist(lapply(chances_files, read.csv))
 background <- readPNG(file.path('images', 'field.png'))
 background_grob <- rasterGrob(background, interpolate=TRUE)
-```
 
-```{r cars}
-# excluding penalty kicks
-chances <- chances[chances$location_x != '-' && chances$location_y != '-']
 chances$location_x <- as.numeric(as.character(chances$location_x))
 chances$location_y <- as.numeric(as.character(chances$location_y))
+```
 
+```{r echo=FALSE}
+jesus <- chances[(chances$player == 'Gabriel Jesus') | (chances$primaryPlayer == 'Gabriel Jesus') |  (chances$secondaryPlayer == 'Gabriel Jesus')]
 ggplot(chances, aes(location_y, location_x, color=outcome)) +
    theme_void() +
    coord_fixed(xlim=c(0, 420), ylim=c(-136, 136), expand=FALSE) +
