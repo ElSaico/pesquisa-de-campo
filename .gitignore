@@ -6,3 +6,4 @@ output/
 content/data
 .DS_Store
 .ipynb_checkpoints/
+content/*.html

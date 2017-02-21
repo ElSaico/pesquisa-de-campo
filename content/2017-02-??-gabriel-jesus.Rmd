@@ -1,0 +1,31 @@
+Title: "Gabriel Jesus"
+Date: 2017-02-20
+Category: Jogadores
+Authors: "Bruno Marques"
+Slug: gabriel-jesus
+
+```{r setup, include=FALSE}
+library(data.table)
+library(ggplot2)
+library(grid)
+library(png)
+
+chances_files <- file.path('data', list.files('data', pattern='StrataData_Chances_.*.csv'))
+chances <- rbindlist(lapply(chances_files, read.csv))
+background <- readPNG(file.path('images', 'field.png'))
+background_grob <- rasterGrob(background, interpolate=TRUE)
+```
+
+```{r cars}
+# excluding penalty kicks
+chances <- chances[chances$location_x != '-' && chances$location_y != '-']
+chances$location_x <- as.numeric(as.character(chances$location_x))
+chances$location_y <- as.numeric(as.character(chances$location_y))
+
+ggplot(chances, aes(location_y, location_x, color=outcome)) +
+   theme_void() +
+   coord_fixed(xlim=c(0, 420), ylim=c(-136, 136), expand=FALSE) +
+   annotation_custom(background_grob, xmin=0, xmax=420, ymin=-136, ymax=136) +
+   scale_color_brewer(palette='Set1') +
+   geom_point()
+```
