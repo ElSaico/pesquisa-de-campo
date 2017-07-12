@@ -1,5 +1,5 @@
 Title: Sejam bem-vindos
-Date: 2017-02-14
+Date: 2017-07-11
 Category: Geral
 Authors: Bruno Marques
 Slug: sejam-bem-vindos
@@ -10,7 +10,7 @@ O futebol sempre foi um jogo que abraçou subjetividades: aquele erro de arbitra
 
 Mas quando é que o senso comum está certo? Quando ele deixa de ser um tema de conversas divertidas e vira uma convicção que - você jura! - é o motivo pelo qual o teimoso do seu treinador levou seu time a outra derrota?
 
-Meu objetivo aqui é analisar o que dá certo, o que dá errado, e como o papel de cada jogador se traduz em informação. Começando com a Premier League, graças aos parceiros da [Stratagem](http://www.stratagem.co/) que gentilmente me fornecem os dados necessários pra isso.
+Meu objetivo aqui é analisar o que dá certo, o que dá errado, e como o papel de cada jogador se traduz em informação. Começando com as finalizações do Brasileirão deste ano, graças aos parceiros da [Stratagem](http://www.stratagem.co/) que gentilmente me fornecem os dados necessários pra isso.
 
 Então, sintam-se a vontade enquanto eu vou trazendo algumas coisas interessantes pra vocês. <s>Ou não.</s>
 
