@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Bruno Marques'
 SITENAME = 'Pesquisa de Campo'
-SITEURL = ''
+SITEURL = 'http://pesquisadecampo.com'
 
 PATH = 'content'
 
@@ -46,7 +46,8 @@ MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup', 'rmd_reader']
 
-STATIC_PATHS = ['figure']
+STATIC_PATHS = ['images', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 RMD_READER_RENAME_PLOT = 'directory'
 RMD_READER_KNITR_OPTS_CHUNK = {'fig.path': 'figure/'}
 
